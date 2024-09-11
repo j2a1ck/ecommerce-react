@@ -8,25 +8,26 @@ import { FaTwitter } from "react-icons/fa";
 const DarkNavbar = () => {
   return (
     <nav>
-      <div className="bg-slate-900 text-white flex ">
-        <ol className="flex-row flex gap-4 justify-start">
-          <li>
-            <FiPhone />
-          </li>
-          <li>98234234</li>
+      <div className="bg-slate-900 text-white items-center md:flex lg:flex h-[46px] w-full text-sm font-semibold hidden ">
+        <div className="flex gap-1 justify-start ml-5 mx-4 mt-1 items-center">
+          <FiPhone />
+          <h6>98234234</h6>
+        </div>
+        <div className="flex gap-1 items-center mx-3 mt-1 ">
           <TfiEmail />
-          <li>sddfkjsd@gmail.com</li>
-        </ol>
-        <ol className="flex justify-center">
-          <li>Follow us and get chance to win 80% off</li>
-        </ol>
-        <ol className="flex justify-end ">
-          <li>Follow us:</li>
-          <li><FaInstagram/></li>
-          <li><FaYoutube/></li>
-          <li><FaFacebook/></li>
-          <li><FaTwitter/></li>
-        </ol>
+          <h6>Jack.70aw@gmail.com</h6>
+        </div>
+        <div className="flex flex-grow justify-center items-center">
+          <h6>Follow Us and get chance to win 80% off</h6>
+        </div>
+        {/* TODO fix link for social media */}
+        <div className="flex justify-end items-center gap-3 mr-6 ">
+          <h6>Follow Us : </h6>
+          <FaInstagram />
+          <FaYoutube />
+          <FaFacebook />
+          <FaTwitter />
+        </div>
       </div>
     </nav>
   );
