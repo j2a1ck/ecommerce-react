@@ -1,10 +1,12 @@
-import DarkNavbar from "./components/DarkNavbar"
+import Navbar from "./components/Navbar"
+import Card from "./components/Card";
 
 export default function Home() {
   return (
     <div>
-      <DarkNavbar/>
-      <p>Is there any point in life or just should we kill </p>
+      <Navbar/>
+      <Card/>
+      <p>oh my god </p>
     </div>
   );
 }
