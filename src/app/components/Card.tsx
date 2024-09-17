@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
 import ladyImage from "../../public/images/lady.png";
 import shockImage from "../../public/images/shock.jpg";
@@ -47,25 +48,28 @@ const Card = () => {
           </>
         ) : (
           <>
-          <div className="w-10 h-2 bg-white "></div>
-          <div className="w-10 h-2 bg-slate-400"></div>
+            <div className="w-10 h-2 bg-white "></div>
+            <div className="w-10 h-2 bg-slate-400"></div>
           </>
-
-          )}
+        )}
       </div>
       <button className="flex flex-grow justify-end items-center m-5">
         {imageIndex ? (
-          <MdOutlineKeyboardArrowLeft
-            onClick={handleArrowIcon}
-            size={70}
-            className="fill-black"
-          />
+          <motion.div whileHover={{ scale: 1.5 }}>
+            <MdOutlineKeyboardArrowLeft
+              onClick={handleArrowIcon}
+              size={70}
+              className="fill-black"
+            />
+          </motion.div>
         ) : (
-          <IoIosArrowForward
-            onClick={handleArrowIcon}
-            size={60}
-            className="fill-white"
-          />
+          <motion.div whileHover={{ scale: 1.6 }}>
+            <IoIosArrowForward
+              onClick={handleArrowIcon}
+              size={60}
+              className="fill-white"
+            />
+          </motion.div>
         )}
       </button>
     </div>
