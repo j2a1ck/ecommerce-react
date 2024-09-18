@@ -17,7 +17,7 @@ const LightNavbar = () => {
   return (
     <>
       {/* Desktop navbar */}
-      <div className="mt-[12px] lg:h-[58px] mb-[8px] ml-[38px] hidden lg:flex md:lg items-center">
+      <div className="mt-[12px] lg:h-[58px] mb-[8px] ml-[38px] hidden lg:flex md:flex items-center">
         <div className="font-bold text-2xl mr-[113px] ">
           <a href="/">Bandege</a>
         </div>
