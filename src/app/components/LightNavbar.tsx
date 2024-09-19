@@ -13,7 +13,6 @@ const LightNavbar = () => {
       function toggleNav() {
         setNavToggle(!navToggle);
       }
-      console.log(navToggle);
   return (
     <>
       {/* Desktop navbar */}
