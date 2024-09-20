@@ -5,6 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import ladyImage from "../../public/images/lady.png";
 import shockImage from "../../public/images/shock.jpg";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import GreenButton from "./GreenButton";
 import { useState } from "react";
 
 const CardHeader = () => {
@@ -34,11 +35,9 @@ const CardHeader = () => {
           <p>but things on a small scale.</p>
         </div>
         {/* TODO add functionality to Button */}
-        <div className="flex">
-          <button className="w-40 h-12 bg-green-500 rounded-md mt-8">
-            SHOP NOW
-          </button>
-        </div>
+        <GreenButton>
+          SHOP NOW
+        </GreenButton>
       </div>
       <div className="flex items-end m-4 ">
         {imageIndex ? (
