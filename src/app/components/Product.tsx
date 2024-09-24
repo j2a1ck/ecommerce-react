@@ -2,12 +2,14 @@ import { PRODUCT } from "../utils/config";
 
 const Product = ({item}: { item: number}) => {
   return (
-          <div>
+          <div className="flex justify-center flex-col">
+            <div className="flex justify-center">
             <img
               src={PRODUCT[item].pic}
               alt="product"
-              className="w-[239px] h-[427px]"
+              className="w-[239px] lg:m-0 lg:mt-0 m-5 mt-14 flex h-[427px]"
             />
+            </div>
             <div className="flex flex-col items-center mt-4">
               <h1 className="text-black font-medium text-lg ">
                 {PRODUCT[item].title}
