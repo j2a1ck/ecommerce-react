@@ -24,35 +24,35 @@ const CardHeader = () => {
 
   return (
     <div
-      className="lg:flex md:flex hidden min-h-screen bg-cover bg-center bg-no-repeat relative "
+      className="flex max-w-full md:flex md:w-full lg:w-full w-[464px] h-[520px] lg:min-h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="text-gray-800 font-bold p-3 justify-center flex flex-col pl-52">
-        <h4 className="text-1xl">SUMME 2024</h4>
-        <h1 className="mt-20 text-6xl">NEW COLLECTION</h1>
-        <div className="mt-20 text-lg font-normal ">
+      <div className="lg:text-gray-800 text-white font-bold p-3 text-center lg:text-start justify-center flex flex-col lg:ml-0 ml-14 lg:pl-52">
+        <h4 className="lg:text-1xl text-sm">SUMMER 2024</h4>
+        <h1 className="lg:mt-20 mt-10 text-3xl lg:text-6xl">NEW COLLECTION</h1>
+        <div className="lg:mt-20 mt-10 lg:text-lg   font-normal ">
           <p>We know large objects will act.</p>
           <p>but things on a small scale.</p>
         </div>
         {/* TODO add functionality to Button */}
-        <GreenButton>
-          SHOP NOW
-        </GreenButton>
+        <div>
+          <GreenButton>SHOP NOW</GreenButton>
+        </div>
       </div>
-      <div className="flex items-end m-4 ">
+      <div className="lg:flex items-end hidden lg:m-4">
         {imageIndex ? (
           <>
-            <div className="w-10 h-2 bg-slate-400"></div>
-            <div className="w-10 h-2 bg-white "></div>
+            <div className="lg:w-10 h-2 bg-slate-400"></div>
+            <div className="lg:w-10 h-2 bg-white"></div>
           </>
         ) : (
           <>
-            <div className="w-10 h-2 bg-white "></div>
-            <div className="w-10 h-2 bg-slate-400"></div>
+            <div className="lg:w-10 h-2 bg-white "></div>
+            <div className="lg:w-10 h-2 bg-slate-400"></div>
           </>
         )}
       </div>
-      <button className="flex flex-grow justify-end items-center m-5">
+      <button className="flex flex-grow justify-end items-center mr-5 lg:m-5">
         {imageIndex ? (
           <motion.div whileHover={{ scale: 1.5 }}>
             <MdOutlineKeyboardArrowLeft
