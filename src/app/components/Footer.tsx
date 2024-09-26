@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <div className="flex flex-col lg:flex-row  justify-center text-start ml-10 lg:ml-0 lg:space-x-28  lg:h-[242px] w-full">
+        <div className="flex flex-col lg:flex-row  justify-center text-start ml-10 lg:ml-0 lg:space-x-28  lg:h-[242px] max-w-full">
           <div className="flex flex-col justify-center mt-10 h-[262] lg:mt-2 bg-white ">
             <h1 className="mb-3 font-bold text-base">Company Info</h1>
             <h2 className="text-gray-400 font-medium text-sm m-1">About Us</h2>
