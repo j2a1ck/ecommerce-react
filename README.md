@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Commerce Homepage
+
+This is a responsive e-commerce homepage built using **Next.js**, **React**, and **Tailwind CSS**. The design was implemented from a Figma file and deployed on Vercel. The project does not have a backend, focusing solely on the frontend UI.
+
+## Preview
+
+![Screenshot](/src/public/images/screenshot.png)
+
+## Design
+
+The original design for this project can be found on Figma: [Figma Design Link](https://www.figma.com/community/file/1102233251923362930)
+
+## Tech Stack
+
+- **Next.js** – React framework for server-side rendering.
+- **React** – JavaScript library for building user interfaces.
+- **Tailwind CSS** – Utility-first CSS framework for styling.
+
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Make sure you have the following installed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Node.js**: [Download Node.js](https://nodejs.org/)
+- **pnpm**: You can install pnpm globally by running:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  ```bash
+  npm install -g pnpm
+  ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/j2a1ck/ecommerce-react.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies using pnpm:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   pnpm i
+   ```
 
-## Deploy on Vercel
+3. Start the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   pnpm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Open your browser and navigate to `http://localhost:3000` to view the project.
+
+## Deployment
+
+The project is deployed on Vercel. If you'd like to deploy it yourself:
+
+1. Push the project to a GitHub repository.
+2. Connect your repository to [Vercel](https://vercel.com/).
+3. Deploy directly from Vercel's dashboard.
+
+## Contributing
+
+Feel free to fork this project, submit issues, or contribute via pull requests.
+
+---
