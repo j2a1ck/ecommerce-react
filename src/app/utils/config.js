@@ -14,7 +14,7 @@ export const PRODUCT = [
     title: "Graphic Design",
     category: "English department",
     price: "$6.48",
-    product_color: "red",
+    ProductColor: "red",
   },
   {
     id: "2",
@@ -22,7 +22,7 @@ export const PRODUCT = [
     title: "Graphic Design",
     category: "English department",
     price: "$6.48",
-    product_color: "red",
+    ProductColor: "red",
   },
   {
     id: "3",
@@ -30,7 +30,7 @@ export const PRODUCT = [
     title: "Graphic Design",
     category: "English department",
     price: "$6.48",
-    product_color: "red",
+    ProductColor: "red",
   },
   {
     id: "4",
@@ -38,7 +38,7 @@ export const PRODUCT = [
     title: "Graphic Design",
     category: "English department",
     price: "$6.48",
-    product_color: "red",
+    ProductColor: "red",
   },
   {
     id: "5",
@@ -46,7 +46,7 @@ export const PRODUCT = [
     title: "Graphic Design",
     category: "English department",
     price: "$6.48",
-    product_color: "red",
+    ProductColor: "red",
   },
   {
     id: "6",
@@ -54,7 +54,7 @@ export const PRODUCT = [
     title: "Graphic Design",
     category: "English department",
     price: "$6.48",
-    product_color: "red",
+    ProductColor: "red",
   },
   {
     id: "7",
@@ -62,7 +62,7 @@ export const PRODUCT = [
     title: "Graphic Design",
     category: "English department",
     price: "$6.48",
-    product_color: "red",
+    ProductColor: "red",
   },
   {
     id: "7",
@@ -70,6 +70,6 @@ export const PRODUCT = [
     title: "Graphic Design",
     category: "English department",
     price: "$6.48",
-    product_color: "red",
+    ProductColor: "red",
   },
 ];
