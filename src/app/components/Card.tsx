@@ -5,12 +5,12 @@ import CardAd from "./CardAd"
 
 const Card = () => {
   return(
-    <div>
+    <>
     <CardHeader/>
     <CardShop/>
     <CardProduct/>
     <CardAd/>
-    </div>
+    </>
   )
 }
 
