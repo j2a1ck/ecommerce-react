@@ -1,35 +1,40 @@
 import { PRODUCT } from "../utils/config";
+import Image from "next/image";
+import clsx from "clsx";
 
-const Product = ({item}: { item: number}) => {
+interface ProductProps {
+  item: number;
+}
+
+const Product = ({ item }: ProductProps) => {
+  const { pic, title, category, price } = PRODUCT[item];
+
   return (
-          <div className="flex justify-center flex-col">
-            <div className="flex justify-center">
-            <img
-              src={PRODUCT[item].pic}
-              alt="product"
-              className="w-[239px] lg:m-0 lg:mt-0 m-5 mt-14 flex h-[427px]"
-            />
-            </div>
-            <div className="flex flex-col items-center mt-4">
-              <h1 className="text-black font-medium text-lg ">
-                {PRODUCT[item].title}
-              </h1>
-              <h2 className="text-gray-500 text-base mt-2">
-                {PRODUCT[item].category}
-              </h2>
-              <h3 className="text-green-600 font-medium text-sm mt-2">
-                <span className="text-gray-400 mr-1">$16.48</span>
-                {PRODUCT[item].price}
-              </h3>
-              <button>
-                <div className="flex space-x-1">
-                  <div className="w-3 h-3 bg-red-600 rounded-full mt-2"></div>
-                  <div className="w-3 h-3 bg-green-600 rounded-full mt-2"></div>
-                  <div className="w-3 h-3 bg-black rounded-full mt-2"></div>
-                </div>
-              </button>
-            </div>
-          </div>
+    <div className="flex flex-col items-center">
+      <Image
+        src={pic}
+        alt={title}
+        width={239}
+        height={427}
+        className="lg:m-0 m-5 mt-14"
+      />
+      <h2 className="text-lg font-medium text-black mt-4">{title}</h2>
+      <h3 className="text-base text-gray-500 mt-2">{category}</h3>
+      <h3 className="text-sm font-medium text-green-600 mt-2">
+        <span className="text-gray-400 mr-1">$16.48</span>
+        {price}
+      </h3>
+      <div className="flex space-x-1 mt-2">
+        {["red-600", "green-600", "black"].map((color) => (
+          <button
+            aria-label="pick color"
+            type="button"
+            key={color}
+            className={clsx("w-3 h-3 rounded-full", `bg-${color}`)}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
 
