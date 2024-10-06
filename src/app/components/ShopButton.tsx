@@ -5,10 +5,11 @@ interface ShopButtonProps {
   isLarge?: boolean;
 }
 
-const ShopButton: React.FC<ShopButtonProps> = ({ isLarge, children }) => {
+const ShopButton = ({ isLarge, children }: ShopButtonProps) => {
   return (
     <div className="flex items-end h-[500px]">
       <button
+        type="submit"
         aria-label="buy"
         className={clsx(
           "flex w-20 font-medium justify-center items-center rounded-lg h-10 bg-white",
