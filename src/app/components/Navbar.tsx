@@ -3,10 +3,10 @@ import LightNavbar from "./LightNavbar"
 
 const Navbar = () => {
     return (
-      <>
+      <header>
         <DarkNavbar />
         <LightNavbar />
-      </>
+      </header>
     );
 }
 

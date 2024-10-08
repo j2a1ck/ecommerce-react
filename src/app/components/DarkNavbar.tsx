@@ -1,10 +1,30 @@
-import React from "react";
 import { FiPhone } from "react-icons/fi";
 import { TfiEmail } from "react-icons/tfi";
-import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaFacebook, FaTwitter } from "react-icons/fa";
+
+const SocialLinks = [
+  {
+    href: "https://www.instagram.com",
+    label: "instagram",
+    icon: <FaInstagram />,
+  },
+  {
+    href: "https://www.youtube.com",
+    label: "youtube",
+    icon: <FaYoutube />,
+  },
+  {
+    href: "https://www.facebook.com",
+    label: "Facebook",
+    icon: <FaFacebook />,
+  },
+  {
+    href: "https://twitter.com",
+    label: "X",
+    icon: <FaTwitter />,
+  },
+];
+
 const DarkNavbar = () => {
   return (
     <nav>
@@ -20,13 +40,19 @@ const DarkNavbar = () => {
         <div className="flex flex-grow justify-center items-center">
           <h6>Follow Us and get chance to win 80% off</h6>
         </div>
-        {/* TODO fix link for social media */}
         <div className="flex justify-end items-center gap-3 mr-6 ">
           <h6>Follow Us : </h6>
-          <FaInstagram />
-          <FaYoutube />
-          <FaFacebook />
-          <FaTwitter />
+          {SocialLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              aria-label={link.label}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link.icon}
+            </a>
+          ))}
         </div>
       </div>
     </nav>
